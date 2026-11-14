@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A small, container-ready sample website served by Nginx.">
+  <title>Hello, container.</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="/">◈ Launchpad</a><span class="badge">Docker ready</span></header>
+  <main>
+    <p class="eyebrow">SMALL SITE. SOLID START.</p>
+    <h1>Hello,<br><span>container.</span></h1>
+    <p class="intro">Your next idea starts here. A lightweight website, neatly packed into a Docker container and ready to make your own.</p>
+    <a class="button" href="#get-started">Make it yours <span aria-hidden="true">↗</span></a>
+    <section class="features" aria-label="Features">
+      <article><span class="number">01 /</span><h2>Keep it simple</h2><p>Plain HTML, CSS, and JavaScript. No build tools or package installation needed.</p></article>
+      <article><span class="number">02 /</span><h2>Ship in a container</h2><p>Nginx serves your site in a small Alpine-based image, with a built-in health check.</p></article>
+      <article><span class="number">03 /</span><h2>Make some changes</h2><p>Edit the files, rebuild the image, and watch this starting point become your own.</p></article>
+    </section>
+    <section class="start" id="get-started"><div><p class="eyebrow">ONE COMMAND TO BEGIN</p><h2>Ready when you are.</h2></div><div class="command"><code id="command">docker compose up --build -d</code><button id="copy" type="button">Copy</button></div><p id="copy-status" role="status" aria-live="polite"></p></section>
+  </main>
+  <footer><span>Built for your next idea.</span><span>HTML + CSS + JS / Nginx + Docker</span></footer>
+</body>
+</html>
