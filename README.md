@@ -1,6 +1,6 @@
 # Docker Sample Website
 
-A responsive sample website using plain HTML, CSS, and JavaScript, served by Nginx in an Alpine-based Docker container. No Node.js or package installation is required.
+A responsive website about troll dolls using plain HTML, CSS, and JavaScript, served by Nginx in an Alpine-based Docker container. No Node.js or package installation is required.
 
 ## Run with Docker Compose
 
@@ -37,11 +37,11 @@ Stop and remove it with `docker rm -f sample-website`.
 
 - `public/index.html`: page content
 - `public/styles.css`: responsive styling
-- `public/app.js`: copy-command interaction
+- `public/app.js`: interactive troll facts
 - `nginx.conf`: server configuration, including the `/health` endpoint
 - `Dockerfile`: image and health check
 - `compose.yaml`: port mapping and restart policy
 
 After changing files, run `docker compose up --build -d` again. Unknown paths return HTTP 404. Verify the server with `curl -fsS http://localhost:8080/health`.
 
-The Copy button uses the browser Clipboard API, available on localhost and HTTPS. If clipboard access is unavailable, the page displays manual-copy instructions.
+The “Another troll fact” button cycles through short facts about troll dolls.

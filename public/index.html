@@ -3,25 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A small, container-ready sample website served by Nginx.">
-  <title>Hello, container.</title>
+  <meta name="description" content="Meet troll dolls: the tiny, wild-haired collectibles that began with a Danish woodcarver's handmade gift.">
+  <title>Tiny trolls. Big hair.</title>
   <link rel="stylesheet" href="/styles.css">
   <script src="/app.js" defer></script>
 </head>
 <body>
-  <header><a class="brand" href="/">◈ Launchpad</a><span class="badge">Docker ready</span></header>
+  <header><a class="brand" href="/">✦ The Troll Nook</a><span class="badge">A little toy history</span></header>
   <main>
-    <p class="eyebrow">SMALL SITE. SOLID START.</p>
-    <h1>Hello,<br><span>container.</span></h1>
-    <p class="intro">Your next idea starts here. A lightweight website, neatly packed into a Docker container and ready to make your own.</p>
-    <a class="button" href="#get-started">Make it yours <span aria-hidden="true">↗</span></a>
-    <section class="features" aria-label="Features">
-      <article><span class="number">01 /</span><h2>Keep it simple</h2><p>Plain HTML, CSS, and JavaScript. No build tools or package installation needed.</p></article>
-      <article><span class="number">02 /</span><h2>Ship in a container</h2><p>Nginx serves your site in a small Alpine-based image, with a built-in health check.</p></article>
-      <article><span class="number">03 /</span><h2>Make some changes</h2><p>Edit the files, rebuild the image, and watch this starting point become your own.</p></article>
+    <p class="eyebrow">WILD HAIR. WARM HEARTS.</p>
+    <h1>Tiny trolls.<br><span>Big hair.</span></h1>
+    <p class="intro">With bright tufts of hair, wide smiles, and wonderfully odd little faces, troll dolls have been making people smile for generations. Here’s the story behind these pocket-sized characters.</p>
+    <a class="button" href="#their-story">Meet the trolls <span aria-hidden="true">↘</span></a>
+    <section class="features" id="their-story" aria-label="The story of troll dolls">
+      <article><span class="number">01 / THE BEGINNING</span><h2>A handmade gift</h2><p>In 1959, Danish woodcarver Thomas Dam made a troll doll for his daughter. His little creation caught on, and the dolls became known as Dam trolls.</p></article>
+      <article><span class="number">02 / THE LOOK</span><h2>Hair with personality</h2><p>The classic troll look combines a small body, a broad grin, and a tall tuft of hair. Versions come in many colors and outfits; some even have a jewel in their belly.</p></article>
+      <article><span class="number">03 / THE CRAZE</span><h2>A collectible comeback</h2><p>Troll dolls became a toy craze in the United States in the early 1960s, then enjoyed another wave of popularity in the 1990s. Collectors still seek out vintage examples today.</p></article>
     </section>
-    <section class="start" id="get-started"><div><p class="eyebrow">ONE COMMAND TO BEGIN</p><h2>Ready when you are.</h2></div><div class="command"><code id="command">docker compose up --build -d</code><button id="copy" type="button">Copy</button></div><p id="copy-status" role="status" aria-live="polite"></p></section>
+    <section class="start" aria-labelledby="fact-heading"><div><p class="eyebrow">A LITTLE MORE TROLL LORE</p><h2 id="fact-heading">Did you know?</h2><p id="troll-fact" class="fact" role="status" aria-live="polite">Troll dolls are often called “good luck trolls.” Their lucky reputation is part of their playful appeal.</p></div><button id="next-fact" type="button">Another troll fact ↗</button></section>
+    <section class="collecting" aria-labelledby="collect-heading"><p class="eyebrow">START YOUR OWN LITTLE COLLECTION</p><h2 id="collect-heading">Choose a troll that makes you smile.</h2><p>Look for a hair color or outfit you love. If you’re buying a vintage doll, check its maker’s marks and condition: dolls from different makers can look alike, and age alone doesn’t guarantee value. Keep your trolls away from direct sunlight to help protect their colors.</p></section>
   </main>
-  <footer><span>Built for your next idea.</span><span>HTML + CSS + JS / Nginx + Docker</span></footer>
+  <footer><span>A small tribute to a big-haired classic.</span><span>From Denmark, with a smile.</span></footer>
 </body>
 </html>

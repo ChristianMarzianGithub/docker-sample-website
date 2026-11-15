@@ -1,10 +1,11 @@
-const copyButton = document.querySelector('#copy');
-const copyStatus = document.querySelector('#copy-status');
-copyButton.addEventListener('click', async () => {
-  try {
-    await navigator.clipboard.writeText(document.querySelector('#command').textContent);
-    copyStatus.textContent = 'Command copied. Run it from the repository directory.';
-  } catch {
-    copyStatus.textContent = 'Select the command above and copy it manually.';
-  }
+const facts = [
+  'Troll dolls are often called “good luck trolls.” Their lucky reputation is part of their playful appeal.',
+  'Thomas Dam was a Danish woodcarver. The earliest doll he made for his daughter was carved from wood.',
+  'Troll dolls have appeared as pencil toppers and key rings, as well as standalone toys.',
+  'The colorful characters in DreamWorks’ Trolls films were inspired by the classic troll dolls.'
+];
+let factIndex = 0;
+document.querySelector('#next-fact').addEventListener('click', () => {
+  factIndex = (factIndex + 1) % facts.length;
+  document.querySelector('#troll-fact').textContent = facts[factIndex];
 });
